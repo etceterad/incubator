@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" class="sidebar-settings"></a>
+        <div class="sidebar-person">
+            <img src="img/unnamed.png" alt="avatar" class="sidebar-person__avatar">
+            <h5 class="sidebar-person__name">Unnamed Person</h5>
+        </div>
+        <div class="sidebar-score">
+            <div class="sidebar-score__rating">
+                <img src="img/Star 2.svg" alt="star" width="42px" height="47px">
+                <p>Средний<br> счет</p>
+            </div>
+            <div class="sidebar-score__hours">
+                <img src="img/clock.svg" alt="clock" width="45px" height="45px">
+                <p>Время обучения</p>
+            </div>
+        </div>
+        <div class="sidebar-nav">
+            <a href="#" id="home">Главная</a><br>
+            <a href="#" id="lectures">Лекции</a><br>
+            <a href="#" id="rating">Рейтинг</a><br>
+            <a href="#" id="homework">Домашнее задание</a><br>
+            <a href="#" id="notes">Заметки</a><br>
+        </div>
+        <div class="sidebar-logout">
+            <a href="#">Log out</a>
+        </div>
+    </div>
+    <section class="mainpage">
+        <div class="mainpage-nav">
+            <form class="mainpage-search">
+                <input type="search" placeholder="Поиск" class="mainpage-search__search">
+                <button type="submit" class="mainpage-search__submit"></button>
+            </form>
+            <ul class="mainpage-menu">
+                <li class="mainpage-menu__first-item"></li>
+                <li class="mainpage-menu__second-item"></li>
+                <li class="mainpage-menu__third-item"></li>
+            </ul>
+            <a href="#" class="mainpage-logout"></a>
+        </div>
+        <div class="mainpage-schedule">
+            <h3 class="mainpage-schedule__title">
+                Расписание
+            </h3>
+            <h4 class="mainpage-schedule__month">
+                Февраль
+            </h4>
+            <table class="mainpage-schedule__calendar">
+                <tr class="mainpage-schedule__days">
+                    <th>Пн</th>
+                    <th>Вт</th>
+                    <th>Ср</th>
+                    <th>Чт</th>
+                    <th>Пт</th>
+                    <th>Сб</th>
+                    <th>Вс</th>
+                </tr>
+                <tr class="mainpage-schedule__dates">
+                    <td>1</td>
+                    <td>2<br>
+                        <div class="mainpage-schedule__finished-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 1
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>3</td>
+                    <td>4<br>
+                        <div class="mainpage-schedule__finished-lecture online-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 2
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr class="mainpage-schedule__dates">
+                    <td>8</td>
+                    <td>9<br>
+                        <div class="mainpage-schedule__finished-lecture online-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 3
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>10</td>
+                    <td>11<br> 
+                        <div class="mainpage-schedule__finished-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 4
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr class="mainpage-schedule__dates">
+                    <td>15</td>
+                    <td>16<br>
+                        <div class="mainpage-schedule__finished-lecture online-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 5
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>17</td>
+                    <td>18<br>
+                        <div class="mainpage-schedule__finished-lecture online-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 6
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr class="mainpage-schedule__dates">
+                    <td>22</td>
+                    <td>23<br>
+                        <div class="mainpage-schedule__finished-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 7
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>24</td>
+                    <td>25<br>
+                        <div class="mainpage-schedule__finished-lecture online-lecture">
+                            <h4 class="finished-lecture__title">
+                                Лекция 8
+                            </h4>
+                            <div class="finished-lecture__info">
+                                <p class="finished-lecture__text">
+                                    Основы
+                                </p>
+                                <p class="finished-lecture__time">
+                                    19:00 - 20:00
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mainpage-beneath">
+            <div class="mainpage-stats">
+                <div class="mainpage-stats__header">
+                    <h2 class="mainpage-stats__title">
+                        Прогресс
+                    </h2>
+                    <a href="#" class="mainpage-stats__details">
+                        Подробнее  
+                    </a>
+                </div>
+                <div class="mainpage-stats__canvases">
+                    <div class="mainpage-stats__canvases-left">
+                        <div class="mainpage-stats__marks">
+                            <div class="marks-canvas">
+                                <canvas id="myChart" width="100px" height="100px"></canvas>
+                                <div class="marks-inside-text">
+                                    <h2 class="marks-current">5</h2>
+                                    <p class="marks-name">Оценки</p>
+                                </div>
+                            </div>
+                            <div class="marks-text">
+                                <h4 class="marks-text__title">Оценки</h4>
+                                <p class="marks-text__p">В диапозоне 86-100, “Хорошо”</p>
+                            </div>
+                        </div>
+                        <div class="mainpage-stats__time">
+                            <div class="marks-canvas">
+                                <canvas id="mySecondChart" width="50px" height="50px"></canvas>
+                                <div class="time-inside-text">
+                                    <h2 class="time-current">18</h2>
+                                    <p class="time-hours">Часов</p>
+                                </div>
+                            </div>
+                            <div class="time-text">
+                                <h4 class="time-text__title">Время</h4>
+                                <p class="time-text__p">Время, затраченное на Домашнее задание</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage-stats__tasks">
+                        <div class="tasks-canvas">
+                            <canvas id="myThirdChart" width="100px" height="100px"></canvas>
+                            <div class="tasks-inside-text">
+                                <h2 class="tasks-current">41%</h2>
+                                <p class="tasks-name">Выполнено</p>
+                            </div>
+                            <div class="mainpage-stats__tasks-undertext">
+                                <h3 class="tasks-canvas__title">
+                                    Текущие занятия
+                                </h3>
+                                <p class="tasks-canvas__success-uppertext">Завершено</p>
+                                <p class="tasks-canvas__success-undertext">38</p>
+                                <div class="tasks-canvas__success"></div><br>
+                                <p class="tasks-canvas__failure-uppertext">Не завершено</p>
+                                <p class="tasks-canvas__failure-undertext">21</p>
+                                <div class="tasks-canvas__failure"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainpage-notes">
+                <div class="mainpage-notes__header">
+                    <h3 class="mainpage-notes__title">
+                        Последние<br>заметки
+                    </h3>
+                    <a href="#" class="mainpage-notes__details">
+                        Подробнее  
+                    </a>
+                </div>
+            </div>
+            <div class="mainpage-next-lecture">
+                <div class="mainpage-next-lecture__header">
+                    <h3 class="mainpage-next-lecture__title">
+                        Следующее занятие<br>
+                        через:
+                    </h3>
+                </div>
+                <div class="mainpage-next-lecture__timer">
+                    <div class="next-lecture__timer-block">
+                        <span id="days">12</span>д
+                    </div>
+                    <div class="next-lecture__timer-block">
+                        <span id="hours">12</span>ч
+                    </div>
+                    <div class="next-lecture__timer-block">
+                        <span id="minutes">12</span>м
+                    </div>
+                    <div class="next-lecture__timer-block">
+                        <span id="sec">12</span>с
+                    </div>
+                </div>
+                <div class="mainpage-next-lecture__info">
+                    <h4 class="next-lecture__info-title">
+                        Лекция 5
+                    </h4>
+                    <h3 class="next-lecture__info-desc">
+                        Основы
+                    </h3>
+                    <p class="next-lecture__info-info">
+                        “Функции и call-back фунцкии”
+                    </p>
+                    <p class="next-lecture__info-tutor">
+                        Преподаватель:
+                    </p>
+                    <h4 class="next-lecture__info-name">
+                        Егор Барковский
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
